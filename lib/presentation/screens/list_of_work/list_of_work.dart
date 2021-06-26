@@ -57,6 +57,7 @@ class _ListOfWorkScreenState extends State<ListOfWorkScreen> {
                     ),
                   ],
                 ),
+                CupertinoSearchTextField(),
                 Container(
                     child: JobsWidget(
                         title: JobsStrings.label_all_jobs, job: jobs)),
