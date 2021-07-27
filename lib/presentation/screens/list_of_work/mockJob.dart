@@ -21,7 +21,7 @@ class MockJob {
         "https://dz2cdn2.dzone.com/storage/article-thumb/13471345-thumb.jpg"
       ],
       name:
-          " I don't think you're really gaining much benefit by using mocks for testing your queries. Testing should be testing the logic of the code, not the ",
+          " I don't think you're really gaining much benefit by using",
       description: "Desc job 2",
       gitUrl: "git job 2",
       appStoreUrl: "app job 2",
@@ -51,4 +51,6 @@ class MockJob {
       gitUrl: "git job 4",
       appStoreUrl: "app job 4",
       playMarketUrl: "pm job 4");
+
+
 }
