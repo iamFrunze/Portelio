@@ -62,7 +62,7 @@ class _SignupFrameState extends State<SignupFrame> {
                               MaterialStateProperty.all(Colors.white)),
                       onPressed: () {},
                       child: Text(
-                        AuthStrings.label_login,
+                        AuthStrings.label_sign_up,
                         style: TextStyle(color: Colors.black),
                       )),
                 ))

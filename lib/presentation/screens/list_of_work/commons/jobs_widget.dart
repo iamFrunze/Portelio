@@ -25,8 +25,7 @@ class _JobsWidgetState extends State<JobsWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return SliverFixedExtentList(
-      itemExtent: 100,
+    return SliverList(
       delegate: SliverChildBuilderDelegate(
           (context, index) => Container(
             alignment: Alignment.center,
@@ -52,7 +51,7 @@ Widget _cardWithJob(String imageUrl, String name, String desc) {
         margin: const EdgeInsets.symmetric(vertical: 4),
         child: Text(
           desc,
-          maxLines: 3,
+          maxLines: 4,
           overflow: TextOverflow.ellipsis,
         ),
       ),

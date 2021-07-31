@@ -13,17 +13,10 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
   Stream<AuthState> mapEventToState(
     AuthEvent event,
   ) async* {
-    switch (event.runtimeType) {
-      case AuthLoginEvent:
-        {
-          yield AuthLoginState();
-          break;
-        }
-      case AuthSignupEvent:
-        {
-          yield AuthSignupState();
-          break;
-        }
+    if(event is AuthToggleButton){
+      if(event.toggle == ToggleButtonEvents.signin)
+        yield AuthSigninState();
+      else yield AuthSignupState();
     }
   }
 }

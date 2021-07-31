@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:portelio/presentation/screens/auth/bloc/bloc/auth_bloc.dart';
+import 'package:portelio/presentation/screens/auth/bloc/auth_bloc.dart';
 import 'package:portelio/res/auth_res/strings.dart';
 
 class CustomToggle extends StatefulWidget {
@@ -30,7 +30,7 @@ class _CustomToggleState extends State<CustomToggle> {
                         setState(() {
                           active = true;
                           BlocProvider.of<AuthBloc>(context)
-                              .add(AuthLoginEvent());
+                              .add(AuthToggleButton(toggle: ToggleButtonEvents.signin));
                         });
                       },
                       child:
@@ -41,7 +41,7 @@ class _CustomToggleState extends State<CustomToggle> {
                         setState(() {
                           active = false;
                           BlocProvider.of<AuthBloc>(context)
-                              .add(AuthSignupEvent());
+                              .add(AuthToggleButton(toggle: ToggleButtonEvents.signup));
                         });
                       },
                       child: _toggleButton(

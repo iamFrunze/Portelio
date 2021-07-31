@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "217343041866",
+    "project_id": "portelio",
+    "storage_bucket": "portelio.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:217343041866:android:216056ef5298bccca0a1b3",
+        "android_client_info": {
+          "package_name": "com.bufrunze.portelio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "217343041866-11g5rpdull73ce7ebsqbgbb5396g1ae6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBPctU---2yXc6d7qx1fn36EBYCLId1J8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "217343041866-11g5rpdull73ce7ebsqbgbb5396g1ae6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
